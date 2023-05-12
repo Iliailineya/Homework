@@ -7,9 +7,18 @@ package org.example;
 //        Створити змінну 1 та використовуючи інкремент та декремент вивести 1  1 1 0 2 1 1
 //        Створити одномірний масив на 10 елементів та заповнити його будь-якими значеннями.Вивести парні числа.
 
+
+import java.util.*;
+
 public class FirstHomework {
-    public static void main(String[] args) {
-        // створення екземплярів примітивних типів
+    public static void main(String[] args) throws InterruptedException {
+
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        System.out.println("Press Enter to continue");
+
+//        Створити по 1 екземпляру кожного примітивного типу
         byte b = 1;
         short s = 2;
         int i = 3;
@@ -19,11 +28,28 @@ public class FirstHomework {
         char c = 'a';
         boolean bool = true;
 
-        // створення рядка двома способами
+        Thread.sleep(1000);
+        scanner.nextLine();
+
+//        Створити строку двома способами
+        System.out.println("Створення рядка двома способами");
+
         String str1 = new String("Hello World!");
         String str2 = "Hello World!";
 
-        // арифметичні операції з кожною змінною окрім bool
+        System.out.println(str1);
+        System.out.println(str2);
+
+        // Рядки однакові
+        System.out.println("Is this the Strings are same? " + str1.equals(str2));
+        // але оператор new прямо створює новий лінк, тому референси на них різні
+        System.out.println("Is the same Strings make the same link? " + (str1==str2));
+
+        Thread.sleep(1000);
+        scanner.nextLine();
+
+//        Написати по 2 арифметичні операції з кожною змінною та вивести результат
+        System.out.println("Арифметичні операції з кожною змінною окрім bool");
         byte b_one = (byte) (b + 2);
         byte b_two = (byte) (b * 3);
         System.out.println("Result of first arithmetic byte operation: " + b_one);
@@ -53,31 +79,121 @@ public class FirstHomework {
         System.out.println("Result of first arithmetic char operation: " + c_one);
         System.out.println("Result of second arithmetic char operation: " + c_two);
 
+        Thread.sleep(1000);
+        scanner.nextLine();
 
-        // реляційні та логічні операції
-        boolean bool_one = i > l;
-        boolean bool_one1 = i < l;
+//        Написати по 2 реляцонні та логічні операції кожного типу та вивести результат
+        System.out.println("Реляційні операції");
+        int testVal_1 = random.nextInt(100);
+        int testVal_2 = random.nextInt(100);
+        int testVal_3 = random.nextInt(100);
+        System.out.println("First value: " + testVal_1 +  "\nSecond value: " + testVal_2 + " \nThird value: " + testVal_3);
 
-        boolean bool_two = f <= d;
-        boolean bool_two1 = f >= d;
 
-        boolean bool_res3 = s == c;
-        boolean bool_res31 = s == d;
+        // == - Дорівнює
+        System.out.println(testVal_1 == testVal_3);
+        System.out.println(testVal_1 == testVal_2);
 
-        boolean bool_res4 = b != l;
+        // != - Не дорівнює
+        System.out.println(testVal_1 != testVal_2);
+        System.out.println(testVal_1 != testVal_3);
 
-        boolean bool_res5 = bool && bool_one;
+        // > - Більше
+        System.out.println(testVal_1 > testVal_2);
+        System.out.println(testVal_2 > testVal_1);
 
-        boolean bool_res6 = !bool || bool_two;
+        // < - Менше
+        System.out.println(testVal_2 < testVal_1);
+        System.out.println(testVal_1 < testVal_3);
 
-        // тернарні операції
-        int res1 = (i > 0) ? 1 : -1;
-        int res2 = (i == 0) ? 0 : ((i > 0) ? 1 : -1);
+        // >= - Більше або рівне
+        System.out.println(testVal_1 >= testVal_2);
+        System.out.println(testVal_1 >= testVal_3);
 
-        // створення та виведення масиву
+        // <= - Менше або рівне
+        System.out.println(testVal_1 <= testVal_2);
+        System.out.println(testVal_1 <= testVal_3);
+
+        Thread.sleep(1000);
+        scanner.nextLine();
+
+        System.out.println("Логічні операції");
+
+        boolean bool_1 = random.nextBoolean();
+        boolean bool_2 = random.nextBoolean();
+        boolean bool_3 = random.nextBoolean();
+
+        System.out.println("First boolean value: " + bool_1
+                +  "\nSecond boolean value: " + bool_2
+                + " \nThird boolean value: " + bool_3);
+
+        // & - Логічна операція "І"
+        System.out.println(bool_1 & bool_2);
+        System.out.println(bool_2 & bool_3);
+
+        // | - Логічна операція "АБО"
+        System.out.println(bool_1 | bool_2);
+        System.out.println(bool_2 | bool_3);
+
+        // ^ - Логічна операція виключне "АБО"
+        System.out.println(bool_1 ^ bool_2);
+        System.out.println(bool_1 ^ bool_3);
+
+        // || - Скорочена логічна операція "АБО"
+        System.out.println(bool_1 || bool_2);
+        System.out.println(bool_2 || bool_3);
+
+        // && - Скорочена логічна операція "І"
+        System.out.println(bool_1 && bool_2);
+        System.out.println(bool_2 && bool_3);
+
+        // ! - Унарна логічна операція "НІ"
+        System.out.println(!bool_1);
+        System.out.println(!bool_2);
+
+        // &= - Логічна операція "І" з присвоюванням
+        bool_1 &= bool_2;
+        System.out.println(bool_1);
+
+        // |= - Логічна операція "АБО" з присвоюванням
+        bool_2 |= bool_3;
+        System.out.println(bool_2);
+
+        // ^= - Логічна операція виключне "АБО" з присвоюванням
+        bool_3 ^= bool_1;
+        System.out.println(bool_3);
+
+        Thread.sleep(1000);
+        scanner.nextLine();
+
+//        Написати 2 тернарні операції та вивести результат
+        System.out.println("Тернарні операції");
+        System.out.println(bool_1 ? "bool_1 is true" : "bool_1 is false");
+        System.out.println(bool_2 ? "bool_2 is true" : "bool_2 is false");
+
+        Thread.sleep(1000);
+        scanner.nextLine();
+
+//        Створити змінну 1 та використовуючи інкремент та декремент вивести 1 1 1 0 2 1 1
+        int one = 1;
+        System.out.println(one);
+        System.out.println(one);
+        System.out.println(one--);
+        System.out.println(one++);
+        System.out.println(++one);
+        System.out.println(--one);
+        System.out.println(one);
+
+        Thread.sleep(1000);
+        scanner.nextLine();
+
+//        Створити одномірний масив на 10 елементів та заповнити його будь-якими значеннями.Вивести парні числа.
+        System.out.println("Створення масиву та виведення парних чисел");
+
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        for (int j = 0; j < arr.length; j++) {
-            if (arr[j] % 2 == 0) j++;
+        for (int k : arr) {
+            if (k % 2 == 0)
+                System.out.println(k);
         }
     }
 }
