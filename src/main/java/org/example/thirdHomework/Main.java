@@ -1,6 +1,7 @@
 package org.example.thirdHomework;
 
-import org.example.thirdHomework.tranport.*;
+import org.example.thirdHomework.shape.Pentagon;
+import org.example.thirdHomework.shape.Rectangle;
 
 /**
  * Створіть 2 низки класів(наприклад: “Animal <- Cat <- Persian” / “People <- Employee <- FireMan”)
@@ -26,32 +27,14 @@ import org.example.thirdHomework.tranport.*;
 public class Main {
     public static void main(String[] args) {
 
-        Test test = new Test();
+//        Utility utility = new Utility();
+//        utility.viewTransport();
 
-        SportsCar sportsCar = new SportsCar(
-                "McQuine",
-                4,
-                301,
-                "Red",
-                4.4,
-                true);
-        Truck truck = new Truck(
-                "Mac",
-                8,
-                120,
-                "Red",
-                20,
-                120);
-        Sedan sedan = new Sedan(
-                "Doc Hudson",
-                4,
-                220,
-                "Blue",
-                150,
-                4);
+        Rectangle rectangle = new Rectangle(10,10);
 
-        test.test(sportsCar);
-        test.test(truck);
-        test.test(sedan);
+            rectangle.calculateDiagonal();
+            rectangle.getPerimeter();
+            rectangle.numOfAngles();
+        System.out.println(rectangle.getArea());
     }
 }

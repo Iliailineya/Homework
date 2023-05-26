@@ -25,7 +25,11 @@ abstract class Transport {
         this.numberOfWheels = numberOfWheels;
     }
 
-    public void move(){
-        System.out.println(getName() + " can move with my " + getNumberOfWheels() + (getNumberOfWheels()==1?" wheel" :" wheels"));
+    public void move() {
+        System.out.println(name + " can move with " + numberOfWheels + (numberOfWheels == 1 ? " wheel" : " wheels"));
+    }
+
+    public void controlled() {
+        System.out.println(name + " can controlled");
     }
 }
