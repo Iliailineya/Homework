@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="FirstHomework">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/secondHomework/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/secondHomework/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/secondHomework/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/secondHomework/package1/SameName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/secondHomework/package2/SameName.java" afterDir="false" />
+    <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="SecondHomework">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Sedan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/SportsCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Transport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Truck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FirstHomework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/firstHomework/FirstHomework.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2PZBFbhRfm6LvFw9krvMAnO4U7a" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,7 +51,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/exercise&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -94,11 +97,26 @@
       <option name="project" value="LOCAL" />
       <updated>1683904943621</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SecondHomework">
+      <created>1684763380118</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684763380118</updated>
+    </task>
+    <task id="LOCAL-00006" summary="SecondHomework">
+      <created>1684763419616</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684763419616</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FirstHomework" />
-    <option name="LAST_COMMIT_MESSAGE" value="FirstHomework" />
+    <MESSAGE value="SecondHomework" />
+    <option name="LAST_COMMIT_MESSAGE" value="SecondHomework" />
   </component>
 </project>
