@@ -7,7 +7,7 @@ import org.example.thirdHomework.myInterface.*;
  * Характеристики: назва, кількість коліс
  * Методи: конструктор, геттери і сеттери для характеристик, додатковий метод "Рух" та "Управління"
  */
-public abstract class Transport implements Driveable, Moveable {
+public abstract class Transport implements Driveable {
     private String name;
     private int numberOfWheels;
 

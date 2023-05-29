@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="ThirdHomework">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/myInterface/Dimensional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/myInterface/Dimensional.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/myInterface/Identifiable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/myInterface/Identifiable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/myInterface/Resizable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/myInterface/Resizable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/shape/Pentagon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/shape/Pentagon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/shape/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/shape/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/shape/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/shape/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/shape/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/shape/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/shape/TwoDimensionalShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/shape/TwoDimensionalShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/SportsCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/SportCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Transport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdHomework/tranport/Truck.java" afterDir="false" />
-    </list>
+    <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="ThirdHomework" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685127401642</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ThirdHomework">
+      <created>1685379725506</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685379725506</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

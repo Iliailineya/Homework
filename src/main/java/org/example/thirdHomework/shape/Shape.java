@@ -10,7 +10,7 @@ import org.example.thirdHomework.myInterface.*;
  *     Методи: абстрактний метод обчислення кількості кутів, конструктор, геттери і сеттери для характеристик
 **/
 
-public abstract class Shape implements Resizable, Dimensional, Identifiable {
+public abstract class Shape implements Resizable, Identifiable {
     private String type;
     private int dimensions;
 
