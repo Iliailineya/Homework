@@ -10,6 +10,15 @@ final public class Truck extends Car {
         this.cargoVolume = cargoVolume;
     }
 
+    public void carry(){
+        System.out.println(getName() + " can carrying " + maxLoad + " ton of cargo");
+    }
+
+    @Override
+    public void brake() {
+        System.out.println("Truck has been looong brake");
+    }
+
     public int getMaxLoad() {
         return maxLoad;
     }
@@ -21,11 +30,7 @@ final public class Truck extends Car {
     public void setMaxLoad(int maxLoad) {
         this.maxLoad = maxLoad;
     }
-
     public void setCargoVolume(double cargoVolume) {
         this.cargoVolume = cargoVolume;
-    }
-    public void carry(){
-        System.out.println(getName() + " can carrying " + maxLoad + " ton of cargo");
     }
 }

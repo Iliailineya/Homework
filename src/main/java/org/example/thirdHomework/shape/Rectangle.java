@@ -1,14 +1,24 @@
 package org.example.thirdHomework.shape;
 
+/**
+ * Неможливий для спадкування клас
+ * Характеристики: довжина, ширина
+ * Методи: конструктор, геттери і сеттери для характеристик, додатковий метод "обчислити діагональ"
+ */
 final public class Rectangle extends TwoDimensionalShape {
     private double length;
     private double width;
 
     public Rectangle(double length, double width) {
-        super("Rectangle", 2, length*width, 4);
+        super("Rectangle", 2, length * width, 2 * length + 2 * width);
         this.length = length;
         this.width = width;
     }
+
+    public double calculateDiagonal() {
+        return Math.sqrt(length * length + width * width);
+    }
+
 
     @Override
     public void numOfAngles() {
@@ -17,28 +27,27 @@ final public class Rectangle extends TwoDimensionalShape {
 
     @Override
     public double calculatePerimeter() {
-        return 2*length + 2*width;
-    }
-
-    public void calculateDiagonal() {
-        System.out.println("Diagonal is " + (Math.sqrt(length*length + width*width)));
+        return 2 * length + 2 * width;
     }
 
     @Override
-    public void getPerimeter() {
-        System.out.println("Perimeter is " + calculatePerimeter());
-    }
-
-    @Override
-    public void display() {
-        System.out.println("Display Rectangle");
+    public void getSize() {
+        System.out.println("Size is " + calculatePerimeter());
     }
 
     @Override
     public void resize(double scaleFactor) {
-        this.length = length*scaleFactor;
-        this.width = width*scaleFactor;
+        this.length = length * scaleFactor;
+        this.width = width * scaleFactor;
     }
+
+    @Override
+    public void randomlyResize() {
+        double scaleFactor = Math.random() * 10;
+        this.length = length * scaleFactor;
+        this.width = width * scaleFactor;
+    }
+
 
     public double getLength() {
         return length;

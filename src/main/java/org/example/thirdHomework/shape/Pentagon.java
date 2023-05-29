@@ -1,5 +1,10 @@
 package org.example.thirdHomework.shape;
 
+/**
+ * Неможливий для спадкування клас
+ * Характеристики: довжини сторін
+ * Методи: конструктор, геттери і сеттери для характеристик, додатковий метод "обчислити правильність п'ятикутника"
+ */
 final public class Pentagon extends TwoDimensionalShape {
     private double sideA;
     private double sideB;
@@ -8,7 +13,7 @@ final public class Pentagon extends TwoDimensionalShape {
     private double sideE;
 
     public Pentagon(double sideA, double sideB, double sideC, double sideD, double sideE) {
-        super("Pentagon", 2, calculatePentagonArea(sideA, sideB, sideC, sideD, sideE), 5);
+        super("Pentagon", 2, calculateArea(sideA, sideB, sideC, sideD, sideE), 5);
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
@@ -16,15 +21,14 @@ final public class Pentagon extends TwoDimensionalShape {
         this.sideE = sideE;
     }
 
-    public static double calculatePentagonArea(double sideA, double sideB, double sideC, double sideD, double sideE) {
+    public static double calculateArea(double sideA, double sideB, double sideC, double sideD, double sideE) {
         double perimeter = sideA + sideB + sideC + sideD + sideE;
         double semiPerimeter = perimeter / 2;
-        double area = Math.sqrt((semiPerimeter - sideA) * (semiPerimeter - sideB) * (semiPerimeter - sideC) *
+        return Math.sqrt((semiPerimeter - sideA) * (semiPerimeter - sideB) * (semiPerimeter - sideC) *
                 (semiPerimeter - sideD) * (semiPerimeter - sideE));
-        return area;
     }
+
     public void isRegular() {
-        // implementation for checking if the pentagon is regular
         System.out.println(getType() + " is regular");
     }
 
@@ -35,8 +39,31 @@ final public class Pentagon extends TwoDimensionalShape {
 
     @Override
     public double calculatePerimeter() {
-        System.out.println(sideA + sideB + sideC + sideD + sideE);
-        return 0;
+        return sideA + sideB + sideC + sideD + sideE;
+    }
+
+    @Override
+    public void getSize() {
+        System.out.println("Size is " + calculatePerimeter());
+    }
+
+    @Override
+    public void resize(double scaleFactor) {
+        this.sideA = this.sideA * scaleFactor;
+        this.sideB = this.sideB * scaleFactor;
+        this.sideC = this.sideC * scaleFactor;
+        this.sideD = this.sideD * scaleFactor;
+        this.sideE = this.sideE * scaleFactor;
+    }
+
+    @Override
+    public void randomlyResize() {
+        double scaleFactor = Math.random() * 10;
+        this.sideA = this.sideA * scaleFactor;
+        this.sideB = this.sideB * scaleFactor;
+        this.sideC = this.sideC * scaleFactor;
+        this.sideD = this.sideD * scaleFactor;
+        this.sideE = this.sideE * scaleFactor;
     }
 
     public double getSideA() {
@@ -77,20 +104,5 @@ final public class Pentagon extends TwoDimensionalShape {
 
     public void setSideE(double sideE) {
         this.sideE = sideE;
-    }
-
-    @Override
-    public void getPerimeter() {
-        System.out.println("Perimeter is " + calculatePerimeter());
-    }
-
-    @Override
-    public void display() {
-        System.out.println("Display Pentagon");
-    }
-
-    @Override
-    public void resize(double scaleFactor) {
-
     }
 }

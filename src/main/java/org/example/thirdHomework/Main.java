@@ -1,7 +1,8 @@
 package org.example.thirdHomework;
 
-import org.example.thirdHomework.shape.Pentagon;
-import org.example.thirdHomework.shape.Rectangle;
+import org.example.thirdHomework.shape.Shape;
+import org.example.thirdHomework.shape.Triangle;
+import org.example.thirdHomework.tranport.*;
 
 /**
  * Створіть 2 низки класів(наприклад: “Animal <- Cat <- Persian” / “People <- Employee <- FireMan”)
@@ -27,14 +28,51 @@ import org.example.thirdHomework.shape.Rectangle;
 public class Main {
     public static void main(String[] args) {
 
-//        Utility utility = new Utility();
-//        utility.viewTransport();
+        Utility utility = new Utility();
 
-        Rectangle rectangle = new Rectangle(10,10);
+        utility.viewSportCar();
+        utility.viewSedan();
+        utility.viewTruck();
 
-            rectangle.calculateDiagonal();
-            rectangle.getPerimeter();
-            rectangle.numOfAngles();
-        System.out.println(rectangle.getArea());
+        utility.viewTriangle();
+        utility.viewRectangle();
+        utility.viewPentagon();
+
+        Shape shape = new Triangle(3, 4, 5);
+
+        shape.display();
+        shape.isExist();
+        shape.numOfAngles();
+        shape.getSize();
+        System.out.println("Type is " + shape.getType()
+                + " Num of dimensions" +  shape.getDimensions());
+        shape.numOfPlane();
+        shape.resize(2);
+        shape.randomlyResize();
+        shape.setType("0_0");
+        shape.setDimensions(99);
+//        Не можуть бути викликані
+//        shape.calculateHeight(3);
+//        shape.calculateTriangleArea(3, 4, 5);
+
+        Car car = new SportCar(
+                "Noise",
+                4,
+                351,
+                "Blue",
+                4.0,
+                false);
+
+        car.start();
+        car.move();
+        car.accelerate();
+        car.control();
+        car.groundMovement();
+        car.shining();
+//        Не може бути викликан
+//        car.race();
+        car.brake();
+        car.stop();
+
     }
 }

@@ -1,8 +1,16 @@
 package org.example.thirdHomework.shape;
 
-import org.example.thirdHomework.myInterface.Resizable;
+import org.example.thirdHomework.myInterface.*;
 
-abstract class Shape implements Resizable {
+/**
+ *     Абстрактний клас без можливості створення екземплярів
+ *     Імплементує інтерфейс Resizable (отже і методи батьківського інтерфейсу Dimensional) та Identifiable,
+ *     що означає, що всі неабстрактні нащадки будуть мати їх поведінку
+ *     Характеристики: тип фігури, розмірність
+ *     Методи: абстрактний метод обчислення кількості кутів, конструктор, геттери і сеттери для характеристик
+**/
+
+public abstract class Shape implements Resizable, Dimensional, Identifiable {
     private String type;
     private int dimensions;
 
@@ -12,6 +20,16 @@ abstract class Shape implements Resizable {
     }
 
     public abstract void numOfAngles();
+
+    @Override
+    public void isExist() {
+        System.out.println(getType() + " is exist");
+    }
+
+    @Override
+    public void display() {
+        System.out.println("Display me");
+    }
 
     public String getType() {
         return type;

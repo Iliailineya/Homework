@@ -1,13 +1,19 @@
 package org.example.thirdHomework.shape;
 
-abstract class TwoDimensionalShape extends Shape {
-    private double area;
-    private double side;
+/**
+*        Абстрактний клас без можливості створення екземплярів
+*        Характеристики: площа, периметр
+*        Методи: абстрактний метод обчислення периметру, конструктор, геттери і сеттери для характеристик
+**/
 
-    public TwoDimensionalShape(String type, int dimensions, double area, double side) {
+public abstract class TwoDimensionalShape extends Shape {
+    private double area;
+    private double perimeter;
+
+    public TwoDimensionalShape(String type, int dimensions, double area, double perimeter) {
         super(type, dimensions);
         this.area = area;
-        this.side = side;
+        this.perimeter = perimeter;
     }
 
     public abstract double calculatePerimeter();
@@ -16,16 +22,20 @@ abstract class TwoDimensionalShape extends Shape {
         return area;
     }
 
+    @Override
+    public void numOfPlane() {
+        System.out.println("One plane");
+    }
     public void setArea(double area) {
         this.area = area;
     }
 
-    public double getSide() {
-        return side;
+    public double getPerimeter() {
+        return this.perimeter;
     }
 
-    public void setSide(double side) {
-        this.side = side;
+    public void setPerimeter(double perimeter) {
+        this.perimeter = perimeter;
     }
 }
 

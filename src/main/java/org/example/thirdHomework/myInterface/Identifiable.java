@@ -1,5 +1,6 @@
 package org.example.thirdHomework.myInterface;
 
 public interface Identifiable {
-    String getType();
+    void isExist();
+    void display();
 }
