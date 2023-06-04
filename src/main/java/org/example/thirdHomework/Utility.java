@@ -100,7 +100,6 @@ public class Utility {
     public void viewPentagon() {
         Pentagon pentagon = new Pentagon(4, 4, 4, 4, 4);
 
-
         pentagon.getSize();
         pentagon.isRegular();
         pentagon.numOfAngles();
