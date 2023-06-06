@@ -1,7 +1,6 @@
 package org.example.thirdHomework;
 
-import org.example.thirdHomework.shape.Shape;
-import org.example.thirdHomework.shape.Triangle;
+import org.example.thirdHomework.shape.*;
 import org.example.thirdHomework.tranport.*;
 
 /**
@@ -33,7 +32,6 @@ public class Main {
         utility.viewSportCar();
         utility.viewSedan();
         utility.viewTruck();
-
         utility.viewTriangle();
         utility.viewRectangle();
         utility.viewPentagon();
