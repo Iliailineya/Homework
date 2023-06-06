@@ -49,6 +49,7 @@ public class Main {
         shape.randomlyResize();
         shape.setType("0_0");
         shape.setDimensions(99);
+
 //        Не можуть бути викликані
 //        shape.calculateHeight(3);
 //        shape.calculateTriangleArea(3, 4, 5);
