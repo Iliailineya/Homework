@@ -10,13 +10,13 @@ public class Main {
         //    Напишите программу, которая принимает на вход массив целых чисел A и число K,
         //    и выводит K-ую порядковую статистику в массиве A (т.е. K-ое наименьшее число в массиве).
 
-        Random random = new Random();
-
         int size = 20;
         int[] arrA = new int[size];
         Arrays.setAll(arrA, i -> ThreadLocalRandom.current().nextInt(30, 101));
 
         System.out.println(Arrays.toString(arrA));
+
+        Random random = new Random();
 
         int K = random.nextInt(size + 1);
 
