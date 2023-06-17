@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="SixHomework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/AdditionalString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/AdditionalString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/GuessWordGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/GuessWordGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,16 +230,5 @@
     <MESSAGE value="Revert &quot;FiveHomework + amend&quot;" />
     <MESSAGE value="SixHomework" />
     <option name="LAST_COMMIT_MESSAGE" value="SixHomework" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/sixHomework/Main.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

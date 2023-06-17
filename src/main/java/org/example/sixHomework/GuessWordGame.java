@@ -9,11 +9,12 @@ public class GuessWordGame {
     private static final String[] WORDS = {"apple", "orange", "lemon", "banana", "apricot", "avocado",
             "broccoli", "carrot", "cherry", "garlic", "grape", "melon", "leak", "kiwi", "mango",
             "mushroom", "nut", "olive", "pea", "peanut", "pear", "pepper", "pineapple", "pumpkin", "potato"};
-    private static final String TARGET_WORLD = getRandomWord();
+    private static final String TARGET_WORD = getRandomWord();
 
     public static void start() {
         printMatrixStyleMessage("Welcome to Guess the Word Game!");
-        printMatrixStyleMessage("Try to guess the word. It consists of " + TARGET_WORLD.length() + " letters.");
+//        Я б  зробив так, гра і без цього досить складна
+//        printMatrixStyleMessage("Try to guess the word. It consists of " + TARGET_WORD.length() + " letters.");
         printMatrixStyleMessage("Enter your guess:");
 
 
@@ -21,7 +22,7 @@ public class GuessWordGame {
         while (true) {
             String guess = scanner.nextLine().toLowerCase();
 
-            if (guess.equals(TARGET_WORLD)) {
+            if (guess.equals(TARGET_WORD)) {
                 printMatrixStyleMessage("Congratulations! You guessed the word correctly.");
                 break;
             } else {
@@ -42,13 +43,15 @@ public class GuessWordGame {
     private static String provideFeedback(String guess) {
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < TARGET_WORLD.length(); i++) {
-            if (i < guess.length() && TARGET_WORLD.charAt(i) == guess.charAt(i)) {
-                sb.append(TARGET_WORLD.charAt(i));
+        for (int i = 0; i < TARGET_WORD.length(); i++) {
+            if (i < guess.length() && TARGET_WORD.charAt(i) == guess.charAt(i)) {
+                sb.append(TARGET_WORD.charAt(i));
             } else {
                 sb.append("#");
             }
         }
+
+        sb.append("#".repeat(15 - TARGET_WORD.length()));
 
         return sb.toString();
     }
