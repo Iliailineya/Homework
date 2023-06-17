@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="Revert &quot;FiveHomework + amend&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/AdditionalString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/GuessWordGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/Task_6.txt" afterDir="false" />
+    <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="SixHomework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/AdditionalString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/AdditionalString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sixHomework/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686086674936</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="SixHomework">
+      <created>1686990329873</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686990329873</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +229,18 @@
     <MESSAGE value="ThirdHomework" />
     <MESSAGE value="FourHomework" />
     <MESSAGE value="Revert &quot;FiveHomework + amend&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;FiveHomework + amend&quot;" />
+    <MESSAGE value="SixHomework" />
+    <option name="LAST_COMMIT_MESSAGE" value="SixHomework" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/sixHomework/Main.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

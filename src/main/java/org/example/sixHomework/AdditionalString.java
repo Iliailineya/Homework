@@ -28,11 +28,24 @@ public class AdditionalString {
 
     // Метод, що перевіряє, чи є рядок паліндромом
     public static boolean isPalindrome(String input) {
+        input = input.toLowerCase();
         int start = 0;
         int end = input.length() - 1;
 
         while (start < end) {
-            if (input.charAt(start) != input.charAt(end)) {
+            char firstChar = input.charAt(start);
+            char lastChar = input.charAt(end);
+
+            if (!Character.isLetter(firstChar)){
+                start++;
+                continue;
+            }
+            if (!Character.isLetter(lastChar)){
+                end--;
+                continue;
+            }
+
+            if (firstChar != lastChar) {
                 return false;
             }
             start++;
@@ -84,7 +97,7 @@ public class AdditionalString {
         System.out.println();
 
         System.out.println("Метод, що перевіряє, чи є рядок паліндромом");
-        String palindrome = "radar";
+        String palindrome = "А роза упала на лапу Азора!";
         boolean isPalindrome = AdditionalString.isPalindrome(palindrome);
         System.out.println("Is '" + palindrome + "' a palindrome? " + isPalindrome);
     }
