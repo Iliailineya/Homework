@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="SixHomework">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sevenHomework/ArrayDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sevenHomework/ArraySizeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sevenHomework/ArrayValueCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sevenHomework/Task_7.txt" afterDir="false" />
+    <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="SevenHomework">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/resources/folder1/folder2/File_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/resources/folder1/folder2/folder3/folder4/File_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/resources/folder1/folder2/folder3/folder4/folder5/folder6/File_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/resources/folder1/folder2/folder3/folder4/folder5/folder6/folder7/folder8/File_4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,20 +59,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/Java/LessonsTasksFromAI",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Java/LessonsTasksFromAI&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\Homework1\src\main\java\org\example\eightHomework\resources\folder1\folder2\folder3\folder4\folder5\folder6" />
+      <recent name="C:\Users\user\IdeaProjects\Homework1\src\main\java\org\example\eightHomework\resources\folder1\folder2" />
     </key>
   </component>
   <component name="RunManager">
@@ -211,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686995120564</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="SevenHomework">
+      <created>1687001578539</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687001578539</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,6 +255,7 @@
     <MESSAGE value="FourHomework" />
     <MESSAGE value="Revert &quot;FiveHomework + amend&quot;" />
     <MESSAGE value="SixHomework" />
-    <option name="LAST_COMMIT_MESSAGE" value="SixHomework" />
+    <MESSAGE value="SevenHomework" />
+    <option name="LAST_COMMIT_MESSAGE" value="SevenHomework" />
   </component>
 </project>
