@@ -1,32 +1,14 @@
 package org.example.eightHomework;
 
 import java.io.*;
-import java.nio.file.*;
+import java.nio.file.Files;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         String rootDirectory = "src/main/java/org/example/eightHomework/resources/";
-
-        while (true) {
-            System.out.println("Choose an action: (1) Write to file, (2) Read from file");
-            Scanner scanner = new Scanner(System.in);
-            int choice = scanner.nextInt();
-
-            switch (choice) {
-                case 1:
-                    traverseDirectory(new File(rootDirectory), true);
-                    break;
-                case 2:
-                    traverseDirectory(new File(rootDirectory), false);
-                    break;
-                default:
-                    System.out.println("Invalid choice. Please try again.");
-                    continue;
-            }
-            break;
-        }
+        loop(rootDirectory);
     }
 
     public static void traverseDirectory(File directory, boolean writeFile) {
@@ -75,6 +57,50 @@ public class Main {
             }
         } catch (IOException e) {
             System.out.println("Error reading file: " + file.getAbsolutePath());
+        }
+    }
+
+    public static void continueLoop(String rootDirectory) {
+        System.out.println("Would you still have the will to choose?");
+        System.out.println("(1) Yes (2) No");
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    loop(rootDirectory);
+                    break;
+                case 2:
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    continue;
+            }
+            break;
+        }
+    }
+
+    public static void loop(String rootDirectory) {
+        while (true) {
+            System.out.println("Choose an action: (1) Write to files, (2) Read from files");
+            Scanner scanner = new Scanner(System.in);
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    traverseDirectory(new File(rootDirectory), true);
+                    continueLoop(rootDirectory);
+                    break;
+                case 2:
+                    traverseDirectory(new File(rootDirectory), false);
+                    continueLoop(rootDirectory);
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    continue;
+            }
+            break;
         }
     }
 }
