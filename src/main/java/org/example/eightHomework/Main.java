@@ -3,13 +3,30 @@ package org.example.eightHomework;
 import java.io.*;
 import java.nio.file.*;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String rootDirectory = "C:\\Users\\user\\IdeaProjects\\Homework1\\src\\main\\" +
-                "java\\org\\example\\eightHomework\\resources\\";
-        traverseDirectory(new File(rootDirectory), true);
-        traverseDirectory(new File(rootDirectory), false);
+        String rootDirectory = "src/main/java/org/example/eightHomework/resources/";
+
+        while (true) {
+            System.out.println("Choose an action: (1) Write to file, (2) Read from file");
+            Scanner scanner = new Scanner(System.in);
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    traverseDirectory(new File(rootDirectory), true);
+                    break;
+                case 2:
+                    traverseDirectory(new File(rootDirectory), false);
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    continue;
+            }
+            break;
+        }
     }
 
     public static void traverseDirectory(File directory, boolean writeFile) {

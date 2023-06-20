@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="SevenHomework">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/resources/folder1/folder2/File_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/resources/folder1/folder2/folder3/folder4/File_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/resources/folder1/folder2/folder3/folder4/folder5/folder6/File_3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/resources/folder1/folder2/folder3/folder4/folder5/folder6/folder7/folder8/File_4.txt" afterDir="false" />
+    <list default="true" id="c4d38b28-4c26-42fd-b235-8783aa5c0379" name="Changes" comment="EightHomework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/eightHomework/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,22 +76,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.fiveHomework.Main" />
-      <module name="LessonHillel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.fiveHomework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -222,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687001578539</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="EightHomework">
+      <created>1687211212544</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687211212544</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +245,7 @@
     <MESSAGE value="Revert &quot;FiveHomework + amend&quot;" />
     <MESSAGE value="SixHomework" />
     <MESSAGE value="SevenHomework" />
-    <option name="LAST_COMMIT_MESSAGE" value="SevenHomework" />
+    <MESSAGE value="EightHomework" />
+    <option name="LAST_COMMIT_MESSAGE" value="EightHomework" />
   </component>
 </project>
